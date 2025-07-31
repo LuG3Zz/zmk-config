@@ -4,17 +4,23 @@
  * SPDX-License-Identifier: MIT
  */
 
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-    ZMK_MACRO(passwd_macro,
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp L &kp U &kp B &kp K &kp R &kp F>;
-    )
-
 / {
+macros {
+        ZMK_MACRO(passwd_macro,
+            label = "LUBKRF_PASSWD", // 给你的宏一个标签，方便识别
+            wait-ms = <30>,          // 两个按键之间的等待时间，30ms很稳妥
+            tap-ms = <30>,           // 每个按键按下的持续时间
+            bindings = <
+                ¯o_tap &kp L  ¯o_tap &kp U  ¯o_tap &kp B
+                ¯o_tap &kp K  ¯o_tap &kp R  ¯o_tap &kp F
+            >
+        )
+    };
         keymap {
                 compatible = "zmk,keymap";
 
