@@ -12,13 +12,10 @@
 / {
 macros {
         ZMK_MACRO(passwd_macro,
-            label = "LUBKRF_PASSWD", // 给你的宏一个标签，方便识别
-            wait-ms = <30>,          // 两个按键之间的等待时间，30ms很稳妥
-            tap-ms = <30>,           // 每个按键按下的持续时间
-            bindings = <
-                &macro_tap &kp L  &macro_tap &kp U  &macro_tap &kp B
-                &macro_tap &kp K  &macro_tap &kp R  &macro_tap &kp F
-            >
+            label = "LUBKRF_PASSWD";
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp L &kp U &kp B &kp K &kp R &kp F>;
         )
     };
         keymap {
