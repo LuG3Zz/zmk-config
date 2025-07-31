@@ -11,7 +11,7 @@
     ZMK_MACRO(passwd_macro,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp L &kp U &kp  B &kp K &kp R &kp F>;
+        bindings = <&kp L &kp U &kp B &kp K &kp R &kp F>;
     )
 
 / {
