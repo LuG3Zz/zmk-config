@@ -9,6 +9,69 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        // Mod-morph for Shift + Number to F-Key
+        sf1: shift_f1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp F1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf2: shift_f2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp F2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf3: shift_f3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp F3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf4: shift_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp F4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf5: shift_f5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp F5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf6: shift_f6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp F6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf7: shift_f7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp F7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf8: shift_f8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp F8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf9: shift_f9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp F9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sf0: shift_f0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp F10>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
