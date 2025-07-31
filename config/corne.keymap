@@ -61,6 +61,24 @@ macros {
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+                        // ==================== 新增的鼠标层 (Layer 3) ====================
+        mouse_layer {
+            bindings = <
+   //---------------------------------------------------------------------------------------------------
+   // | Exit Layer | Scroll Up | Scroll L/R | Scroll Down |            |             | |           | Middle Click |            |            | Back | Fwd  |
+   // |------------|-----------|------------|-------------|------------|-------------|-|-----------|--------------|------------|------------|------|------|
+   // | Left Click | Scroll L  | Scroll R   | Right Click | Back       | Fwd         | | Move Left | Move Down    | Move Up    | Move Right |      |      |
+   // |------------|-----------|------------|-------------|------------|-------------|-|-----------|--------------|------------|------------|------|------|
+   // |            |           |            |             |            |             | |           |              |            |            |      |      |
+   // |------------|-----------|------------|-------------|------------|-------------|-|-----------|--------------|------------|------------|------|------|
+   //                               |            |             |             | |           |              |            |
+   //                               |------------|-------------|-------------|-|-----------|--------------|------------|
+   &trans     &msc SCRL_UP  &trans        &msc SCRL_DOWN &trans       &trans         &trans      &mkp MCLK      &trans       &trans       &mkp MB4 &mkp MB5
+   &mkp LCLK  &msc SCRL_LEFT &msc SCRL_RIGHT &mkp RCLK      &mkp MB4     &mkp MB5       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans &trans
+   &trans     &trans        &trans        &trans         &trans       &trans         &trans      &trans         &trans       &trans       &trans &trans
+                                             &trans       &trans        &trans        &trans      &trans         &trans
+            >;
+        };
         extra1 {
             status = "reserved";
         };
