@@ -16,8 +16,8 @@ macros {
             wait-ms = <30>,          // 两个按键之间的等待时间，30ms很稳妥
             tap-ms = <30>,           // 每个按键按下的持续时间
             bindings = <
-                ¯o_tap &kp L  ¯o_tap &kp U  ¯o_tap &kp B
-                ¯o_tap &kp K  ¯o_tap &kp R  ¯o_tap &kp F
+                &macro_tap &kp L  &macro_tap &kp U  &macro_tap &kp B
+                &macro_tap &kp K  &macro_tap &kp R  &macro_tap &kp F
             >
         )
     };
